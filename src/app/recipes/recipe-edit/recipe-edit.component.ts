@@ -47,6 +47,9 @@ export class RecipeEditComponent implements OnInit {
   onCancel(){
     this.router.navigate(['../'], {relativeTo: this.route});
   }
+
+  get formData() { return <FormArray>this.recipeForm.get('ingredients'); }
+  
   
   onAddIngredient(){
     (<FormArray>this.recipeForm.get('ingredients')).push(

@@ -22,7 +22,7 @@ export class AddRecipe implements Action{
 export class UpdateRecipe implements Action{
     readonly type = UPDATE_RECIPE;
     
-    constructor(public payload: {index: number, updatedRecipe: Recipe){}
+    constructor(public payload: {index: number, updatedRecipe: Recipe}){}
 }
 
 export class DeleteRecipe implements Action{
